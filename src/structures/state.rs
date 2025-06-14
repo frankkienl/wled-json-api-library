@@ -87,7 +87,7 @@ pub struct State {
     #[serde(default = "none_function")]
     pub playlist: Option<Playlist>,
 
-    /// Array of segment objects; Segments are individual parts of the LED strip. In 0.9.0 this will enables running different effects on differentparts of the strip.
+    /// Array of segment objects; Segments are individual parts of the LED strip. In 0.9.0 this will enable running different effects on different parts of the strip.
     #[serde(skip_serializing_if = "Option::is_none")]
     #[serde(default = "none_function")]
     pub seg: Option<Vec<Seg>>,
