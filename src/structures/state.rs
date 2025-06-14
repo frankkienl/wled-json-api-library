@@ -138,7 +138,7 @@ pub struct Nl {
     #[serde(default = "none_function")]
     pub tbri: Option<u8>,
 
-    /// -1 to 15300; Remaining nightlight duration in seconds, -1 if not active. Only in state response, can not be set.
+    /// -1 to 15300; Remaining nightlight duration in seconds, -1 if not active. Only in state response cannot be set.
     #[serde(skip_serializing)]
     #[serde(default = "none_function")]
     pub rem: Option<i16>,
